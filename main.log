@@ -1,0 +1,73 @@
+2021-12-14 11:26:07 [main] INFO  liquibase.database - Set default schema name to public
+2021-12-14 11:26:07 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2021-12-14 11:26:07 [main] INFO  liquibase.command - Dropping Database Objects in schema: postgres.public
+2021-12-14 11:26:08 [main] INFO  liquibase.database - Successfully deleted all supported object types in schema postgres.public.
+2021-12-14 11:26:08 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2021-12-14 11:26:08 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Creating database history table with name: public.databasechangelog
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Table message_recipients created
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-1::Andrew ran successfully in 15ms
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Table messages created
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-2::Andrew ran successfully in 66ms
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Table users created
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-3::Andrew ran successfully in 200ms
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Foreign key constraint added to message_recipients (message_id)
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-4::Andrew ran successfully in 10ms
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Foreign key constraint added to message_recipients (user_id)
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-5::Andrew ran successfully in 10ms
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Foreign key constraint added to messages (sender_user_id)
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-6::Andrew ran successfully in 10ms
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - Table daily_domains created
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-7::Andrew ran successfully in 110ms
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - New row inserted into users
+2021-12-14 11:26:09 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-8::Andrew ran successfully in 10ms
+2021-12-14 11:26:09 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2021-12-14 11:26:13 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 11:27:08 [main] INFO  liquibase.database - Set default schema name to public
+2021-12-14 11:27:08 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2021-12-14 11:27:08 [main] INFO  liquibase.command - Dropping Database Objects in schema: postgres.public
+2021-12-14 11:27:09 [main] INFO  liquibase.database - Successfully deleted all supported object types in schema postgres.public.
+2021-12-14 11:27:09 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2021-12-14 11:27:09 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2021-12-14 11:27:09 [main] INFO  liquibase.changelog - Creating database history table with name: public.databasechangelog
+2021-12-14 11:27:09 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - Table message_recipients created
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-1::Andrew ran successfully in 8ms
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - Table messages created
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-2::Andrew ran successfully in 43ms
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - Table users created
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-3::Andrew ran successfully in 77ms
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - Foreign key constraint added to message_recipients (message_id)
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-4::Andrew ran successfully in 35ms
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - Foreign key constraint added to message_recipients (user_id)
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-5::Andrew ran successfully in 10ms
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - Foreign key constraint added to messages (sender_user_id)
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-6::Andrew ran successfully in 10ms
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - Table daily_domains created
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-7::Andrew ran successfully in 100ms
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - New row inserted into users
+2021-12-14 11:27:10 [main] INFO  liquibase.changelog - ChangeSet classpath:db/changelog/db.changelog-master.yml::1639427632245-8::Andrew ran successfully in 10ms
+2021-12-14 11:27:10 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2021-12-14 11:27:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 11:31:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-14 11:39:33 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties': Could not bind properties to 'JpaProperties' : prefix=spring.jpa, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.jpa.open-in-view' to java.lang.Boolean
+2021-12-14 11:39:33 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.jpa.open-in-view' to java.lang.Boolean:
+
+    Property: spring.jpa.open-in-view
+    Value: disable
+    Origin: class path resource [application.yml] - 28:19
+    Reason: failed to convert java.lang.String to java.lang.Boolean (caused by java.lang.IllegalArgumentException: Invalid boolean value 'disable')
+
+Action:
+
+Update your application's configuration
+

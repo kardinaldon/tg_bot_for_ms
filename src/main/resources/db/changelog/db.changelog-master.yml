@@ -1,0 +1,188 @@
+databaseChangeLog:
+- changeSet:
+    id: 1639427632245-1
+    author: Andrew
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: message_id
+            type: BIGINT
+        - column:
+            constraints:
+              nullable: false
+            name: user_id
+            type: BIGINT
+        tableName: message_recipients
+- changeSet:
+    id: 1639427632245-2
+    author: Andrew
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: messages_pkey
+            name: message_id
+            type: BIGINT
+        - column:
+            name: message_body
+            type: VARCHAR(255)
+        - column:
+            name: sender_user_id
+            type: BIGINT
+        tableName: messages
+- changeSet:
+    id: 1639427632245-3
+    author: Andrew
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: users_pkey
+            name: user_id
+            type: BIGINT
+        - column:
+            name: chat_id
+            type: BIGINT
+        - column:
+            name: last_message_at
+            type: TIMESTAMP WITHOUT TIME ZONE
+        - column:
+            name: name
+            type: VARCHAR(255)
+        - column:
+            name: user_name
+            type: VARCHAR(255)
+        tableName: users
+- changeSet:
+    id: 1639427632245-4
+    author: Andrew
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: message_id
+        baseTableName: message_recipients
+        constraintName: fk1v4eg8ytqvjrfbfw63mwpmtf5
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: NO ACTION
+        onUpdate: NO ACTION
+        referencedColumnNames: message_id
+        referencedTableName: messages
+        validate: true
+- changeSet:
+    id: 1639427632245-5
+    author: Andrew
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: user_id
+        baseTableName: message_recipients
+        constraintName: fk4vcc6t07ik5epkqdi7hdewow9
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: NO ACTION
+        onUpdate: NO ACTION
+        referencedColumnNames: user_id
+        referencedTableName: users
+        validate: true
+- changeSet:
+    id: 1639427632245-6
+    author: Andrew
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: sender_user_id
+        baseTableName: messages
+        constraintName: fkk4mpqp6gfuaelpcamqv01brkr
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: NO ACTION
+        onUpdate: NO ACTION
+        referencedColumnNames: user_id
+        referencedTableName: users
+        validate: true
+- changeSet:
+    id: 1639427632245-7
+    author: Andrew
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: daily_domains_pkey
+            name: id
+            type: BIGINT
+        - column:
+            name: block
+            type: BOOLEAN
+        - column:
+            name: delete_date
+            type: date
+        - column:
+            name: domain_name
+            type: VARCHAR(255)
+        - column:
+            name: hotness
+            type: BIGINT
+        - column:
+            name: judicial
+            type: BOOLEAN
+        - column:
+            name: links
+            type: BIGINT
+        - column:
+            name: old
+            type: INTEGER
+        - column:
+            name: price
+            type: numeric(19, 2)
+        - column:
+            name: registrar
+            type: VARCHAR(255)
+        - column:
+            name: rkn
+            type: BOOLEAN
+        - column:
+            name: visitors
+            type: BIGINT
+        - column:
+            name: x_value
+            type: BIGINT
+        - column:
+            name: yandex_tic
+            type: BIGINT
+        tableName: daily_domains
+- changeSet:
+    id: 1639427632245-8
+    author: Andrew
+    comment: "Create Bot user"
+    changes:
+    - insert:
+        tableName: users
+        columns:
+            - column:
+                name: user_id
+                value: 1
+            - column:
+                name: user_name
+                value: "@ms_test_bot"
+            - column:
+                name: name
+                value: "BOT"
+            - column:
+                name: chat_id
+                value: 0
+
+
+
+
