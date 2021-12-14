@@ -39,7 +39,7 @@ public class ScheduledTasks {
     private List<UserEntity> users;
     private List<UserEntity> subscribers;
 
-    @Scheduled(cron = "0 0 14 * * *")
+    @Scheduled(cron = "0 0 14 * * *", zone = "GMT+3")
     public void getLinksAndSendSubscribers() {
 
         dailyDomainService.deleteAllDataFromTable();
